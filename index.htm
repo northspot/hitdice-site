@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Audio Showcase</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #f4f4f9; }
+        .audio-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        audio { width: 100%; margin-top: 10px; }
+        h1 { color: #333; }
+        .warning { font-size: 0.8em; color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <h1>Audio Collection</h1>
+    <p>Testing large file playback from Google Drive storage.</p>
+
+    <div class="audio-card">
+        <h3>Track 01: Ambient Waves</h3>
+        <p class="warning">Note: 400MB files may take a moment to buffer.</p>
+        <audio controls>
+            <source src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="audio-card">
+        <h3>Track 02: Deep Bass Test</h3>
+        <audio controls>
+            <source src="https://drive.google.com/uc?export=download&id=YOUR_SECOND_FILE_ID" type="audio/mpeg">
+        </audio>
+    </div>
+
+</body>
+</html>
